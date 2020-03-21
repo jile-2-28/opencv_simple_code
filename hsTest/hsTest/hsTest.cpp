@@ -62,7 +62,6 @@ int main()
 		{
 			float binValue = dstHist.at<float>(hue, saturation);//直方图组距的值
 			int intensity = cvRound(binValue * 255 / maxValue);//强度
-			int intensity = cvRound(binValue * 255 / maxValue);//强度
 
 			//正式进行绘制
 			rectangle(histImg, Point(hue * scale, saturation * scale),
