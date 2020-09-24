@@ -21,7 +21,7 @@ int main()
 
 	//进行方框滤波操作
 	Mat out;
-	boxFilter(image, out, -1, Size(5, 5));
+	boxFilter(image, out, -1, Size(3, 3));
 
 	//显示效果图
 	imshow("方框滤波【效果图】", out);
